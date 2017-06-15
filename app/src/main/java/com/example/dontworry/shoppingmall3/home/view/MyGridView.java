@@ -1,4 +1,4 @@
-package com.example.dontworry.shoppingmall3.home.utils;
+package com.example.dontworry.shoppingmall3.home.view;
 
 import android.content.Context;
 import android.util.AttributeSet;

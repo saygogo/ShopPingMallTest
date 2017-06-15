@@ -37,4 +37,5 @@ dependencies {
     compile "com.zhy:magic-viewpager:1.0.1"
     //秒杀控件
     compile "com.github.iwgang:countdownview:2.1.3"
+    compile 'com.github.iwgang:countdownview:2.1.3'
 }

@@ -63,6 +63,11 @@ public class ShoppingCartFragment extends BaseFragment {
     public void initData() {
         super.initData();
         Log.e(TAG, "绑定数据到控件上...");
+        showData();
+
+    }
+
+    private void showData() {
     }
 
     @OnClick({R.id.tv_shopcart_edit, R.id.checkbox_all, R.id.btn_check_out, R.id.cb_all, R.id.btn_delete, R.id.btn_collection, R.id.tv_empty_cart_tobuy})
