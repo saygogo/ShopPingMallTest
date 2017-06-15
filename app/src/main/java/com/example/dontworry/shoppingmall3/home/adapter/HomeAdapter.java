@@ -176,6 +176,8 @@ public class HomeAdapter extends RecyclerView.Adapter {
             actViewpager.setPageMargin(20);
             actViewpager.setPageTransformer(true, new
                     RotateYTransformer());
+
+
         }
     }
 }
