@@ -216,11 +216,10 @@ public class HomeAdapter extends RecyclerView.Adapter {
             SecKillRecyclerAdapter adapter = new SecKillRecyclerAdapter(context, seckill_info.getList());
             rvSeckill.setAdapter(adapter);
             rvSeckill.setLayoutManager(new LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false));
-
             adapter.setOnItemClickListener(new SecKillRecyclerAdapter.OnItemClickListener() {
                 @Override
                 public void ItemClick(int position) {
-                    Toast.makeText(context, position + "被点击了", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(context, "被点击了", Toast.LENGTH_SHORT).show();
                 }
             });
         }
@@ -262,11 +261,10 @@ public class HomeAdapter extends RecyclerView.Adapter {
         @BindView(R.id.gv_hot)
         MyGridView gvHot;
 
-        public HotViewHolder(final Context context, View inflate) {
+        public HotViewHolder(Context context, View inflate) {
             super(inflate);
             this.context = context;
             ButterKnife.bind(this, inflate);
-
         }
 
         public void setData(final List<HomeBean.ResultBean.HotInfoBean> hot_info) {
@@ -276,7 +274,7 @@ public class HomeAdapter extends RecyclerView.Adapter {
             gvHot.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                 @Override
                 public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                    Toast.makeText(context, hot_info.get(position).getName()+"被点击了", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(context,hot_info.get(position).getName()+"被点击了", Toast.LENGTH_SHORT).show();
                 }
             });
         }
